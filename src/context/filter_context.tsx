@@ -22,8 +22,6 @@ type filtersType = {
   maxPrice: number
   price: number
   forWhom: string
-  age: string[]
-  height: string[]
 }
 
 export const defaultFilters: filtersType = {
@@ -33,8 +31,6 @@ export const defaultFilters: filtersType = {
   maxPrice: 0,
   price: 0,
   forWhom: 'all',
-  age: [],
-  height: [],
 }
 
 export type initialStateType = {
@@ -101,8 +97,6 @@ export const FilterProvider: React.FC = ({ children }) => {
 
     let name = e.target.name
     let value = e.target.value
-    // only checkbox has e.target.checked prop, so only init checked variable here
-    let checked
 
     if (name === 'category') {
       value = e.target.textContent
@@ -113,10 +107,7 @@ export const FilterProvider: React.FC = ({ children }) => {
     if (name === 'price') {
       value = Number(value)
     }
-    if (name === 'age' || name === 'height') {
-      checked = e.target.checked
-    }
-    dispatch({ type: UPDATE_FILTERS, payload: { name, value, checked } })
+    dispatch({ type: UPDATE_FILTERS, payload: { name, value } })
   }
   const clearFilters = () => {
     dispatch({ type: CLEAR_FILTERS })

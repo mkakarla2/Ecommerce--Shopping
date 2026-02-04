@@ -4,8 +4,6 @@ import { SearchFilters } from './SearchFilters'
 import { CategoryFilters } from './CategoryFilters'
 import { ForWhomFilters } from './ForWhomFilters'
 import { PriceFilters } from './PriceFilters'
-import { AgeFilters } from './AgeFilters'
-import { HeightFilters } from './HeightFilters'
 import { ClearFilters } from './ClearFilters'
 import { FiltersButton } from './FiltersButton'
 
@@ -26,8 +24,6 @@ const Filters = () => {
           <CategoryFilters />
           <ForWhomFilters />
           <PriceFilters />
-          <AgeFilters />
-          <HeightFilters />
         </form>
         <ClearFilters />
       </div>

@@ -6,7 +6,7 @@ import { AddToCart } from '../../components'
 export const SingleProductContent = () => {
   const { singleProduct } = useProductsContext()
 
-  const { name, price, itemDescription, brand, stock,  ageDescription, heightDescription } = {
+  const { name, price, itemDescription, brand, stock } = {
     ...singleProduct,
   }
   return (
@@ -23,20 +23,6 @@ export const SingleProductContent = () => {
         <p className='info'>
           <span>Brand : </span>
           {brand}
-        </p>
-      ) : undefined}
-
-      {ageDescription ? (
-        <p className='info'>
-          <span>Suitable for age : </span>
-          {ageDescription}
-        </p>
-      ) : undefined}
-
-      {heightDescription ? (
-        <p className='info'>
-          <span>Suitable for height : </span>
-          {heightDescription}
         </p>
       ) : undefined}
 
