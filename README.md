@@ -28,6 +28,47 @@ An e-commerce app that allows shoppers to view, sort, and filter products, add i
 - **Sanity CMS** for product management
 - **Netlify** for hosting and serverless functions
 
+## Project Structure
+
+```
+├── public/                  # Static files
+│   └── index.html
+├── src/
+│   ├── assets/              # Images and static assets
+│   ├── components/          # Reusable UI components
+│   │   ├── Navbar/          # Navigation bar
+│   │   ├── Sidebar/         # Mobile sidebar menu
+│   │   ├── FeaturedProducts/# Featured products section
+│   │   ├── Services/        # Services section
+│   │   ├── Filters/         # Product filters
+│   │   ├── Sort/            # Sorting options
+│   │   └── Contact/         # Contact form
+│   ├── context/             # React Context providers
+│   │   ├── products_context.tsx
+│   │   ├── cart_context.tsx
+│   │   └── filter_context.tsx
+│   ├── reducers/            # State reducers
+│   │   ├── products_reducer.ts
+│   │   ├── cart_reducer.tsx
+│   │   └── filter_reducer.ts
+│   ├── pages/               # Page components
+│   │   ├── HomePage.tsx
+│   │   ├── ProductsPage.tsx
+│   │   ├── SingleProductPage/
+│   │   ├── CartPage.tsx
+│   │   ├── CheckoutPage.tsx
+│   │   └── SuccessfulPaymentPage.tsx
+│   ├── utils/               # Helper functions & constants
+│   ├── App.tsx              # Main app component
+│   └── index.tsx            # Entry point
+├── functions/               # Netlify serverless functions
+│   ├── products.ts
+│   └── create-payment-intent.ts
+├── luckyshopping/           # Sanity CMS Studio
+│   └── schemas/             # Content schemas
+└── package.json
+```
+
 ## Run Locally
 
 ```powershell
