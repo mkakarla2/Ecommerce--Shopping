@@ -1,5 +1,9 @@
 # Lucky Shopping – TypeScript e-commerce
 
+## 🌐 Live Demo
+
+**[https://lucky-shopping-store.netlify.app](https://lucky-shopping-store.netlify.app)**
+
 ## Screenshots
 
 ### Home Page
