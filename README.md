@@ -11,9 +11,6 @@
 ### Cart Page
 ![Cart Page](./src/assets/cart%20page.png)
 
-### Filter Toggle (Mobile)
-![Filter Toggle](./src/assets/filter-toggle.png)
-
 ---
 
 ### Project owner: Mohan Kakarla
@@ -53,16 +50,13 @@ npm start
 
 2. **View Options** – Shoppers can choose between `ListView` or `GridView`. See [src/components/ProductList.tsx](src/components/ProductList.tsx)
 
-3. **Filtering** – Filter products by keyword, category, price, etc. See [src/components/Filters/Filters.tsx](src/components/Filters/Filters.tsx)
+3. **Sorting** – Sort products by price or name in ascending/descending order. See [src/reducers/filter_reducer.ts](src/reducers/filter_reducer.ts)
 
-4. **Sorting** – Sort products by price or name in ascending/descending order. See [src/reducers/filter_reducer.ts](src/reducers/filter_reducer.ts)
-
-5. **Stripe Checkout** – Payment processed via Stripe API. See [src/components/CheckoutForm.tsx](src/components/CheckoutForm.tsx)
+4. **Stripe Checkout** – Payment processed via Stripe API. See [src/components/CheckoutForm.tsx](src/components/CheckoutForm.tsx)
 
 ## What can be improved?
 
-1. Filter in mobile view could use a modal instead of a toggle-able menu
-2. Product variants (colors, sizes) with same `product_id` but different `SKU`
+1. Product variants (colors, sizes) with same `product_id` but different `SKU`
 
 ---
 
